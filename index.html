@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+   <div id="kalender">
+<div class="grid">
+    <button class="grid__item grid__item--sun grid__item--lg grid__item--1">
+     <img id="myImg"
+       src="https://m.media-amazon.com/images/I/7117XJuLHsL._AC_UF894,1000_QL80_.jpg"
+       style="width:180px;height:180px;position:relative;bottom:-2px;">
+      <div id="myModal" class="modal" style="display:none;">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" 
+        src="https://m.media-amazon.com/images/I/7117XJuLHsL._AC_UF894,1000_QL80_.jpg">
+     </div>
+        <span class="grid__item-door">
+           <div class="door-front">1</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--2">
+      <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: 45px;"src="2.png"></p>
+        <span class="grid__item-door">
+            <div class="door-front">2</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--lg grid__item--3">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: 45px;"src="3.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">3</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--moss grid__item--lg grid__item--4">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: 45px;"src="4.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">4</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--5">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: 45px;"src="5.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">5</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--rose grid__item--lg grid__item--6">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: 45px;"src="6.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">6</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--7">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 45px;"src="7.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">7</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--8">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 80px;
+    position: relative;
+    bottom: 45px;"src="8.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">8</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--9">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 80px;
+    position: relative;
+    bottom: 45px;"src="9.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">9</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--10">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 80px;
+    position: relative;
+    bottom: 45px;"src="10.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">10</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--sky grid__item--11">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 80px;
+    height: 180px;
+    position: relative;
+    bottom: 45px;"src="11.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">11</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--12">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 80px;
+    position: relative;
+    bottom: 45px;"src="12.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">12</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--moss grid__item--lg grid__item--13">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: 45px;"src="13.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">13</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--14">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 80px;
+    position: relative;
+    bottom: 45px;"src="14.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">14</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--rose grid__item--15">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 45px;"src="15.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">15</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--16">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
+    height: 80px;
+    position: relative;
+    bottom: 45px;"src="16.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">16</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--17">
+        <p style="color:white; z-index:0; position:relative;"><img style="width: 80px;
+    height: 180px;
+    position: relative;
+    bottom: 45px;"src="17.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">17</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--sky grid__item--18">
+        <p style="color:white; z-index:0; position:relative;">Test</p>
+        <span class="grid__item-door">
+             <div class="door-front">18</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--rose grid__item--19">
+        <p style="color:white; z-index:0; position:relative;">Test</p>
+        <span class="grid__item-door">
+             <div class="door-front">19</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--20">
+        <p style="color:white; z-index:0; position:relative;">Test</p>
+        <span class="grid__item-door">
+             <div class="door-front">20</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--sun grid__item--lg grid__item--21">
+        <p style="color:white; z-index:0; position:relative;">Test</p>
+        <span class="grid__item-door">
+             <div class="door-front">21</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item  grid__item--sun grid__item--22">
+        <p style="color:white; z-index:0; position:relative;">Test</p>
+        <span class="grid__item-door">
+             <div class="door-front">22</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--23">
+        <p style="color:white; z-index:0; position:relative;">Test</p>
+        <span class="grid__item-door">
+             <div class="door-front">23</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+    <button class="grid__item grid__item--sky grid__item--lg grid__item--24">
+        <p style="color:white; z-index:0; position:relative;"><img style="width:180px;height:180px; position: relative;bottom: 45px;"src="Merry Christmas.png"></p>
+        <span class="grid__item-door">
+             <div class="door-front">24</div>
+           <div class="door-back"></div>
+        </span>
+        <span class="grid__item-shadow"></span>
+    </button>
+</div>
+</div> 
+<script>
+var modal = document.getElementById("myModal");
+document.body.appendChild(modal);
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+img.onclick = function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+modal.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+  </body>
+</html>
