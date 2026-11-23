@@ -10,9 +10,10 @@
    <div id="kalender">
 <div class="grid">
     <button class="grid__item grid__item--sun grid__item--lg grid__item--1">
+    <div class="locked" id="locked">&#128274;</div>
      <img id="myImg"
        src="https://m.media-amazon.com/images/I/7117XJuLHsL._AC_UF894,1000_QL80_.jpg"
-       style="width:180px;height:180px;position:relative;bottom:-2px;">
+       style="width:180px;height:180px;position:absolute;bottom:5px; left:6px;">
       <div id="myModal" class="modal" style="display:none;">
       <span class="close">&times;</span>
       <img class="modal-content" id="img01" 
@@ -25,10 +26,15 @@
         <span class="grid__item-shadow"></span>
     </button>
     <button class="grid__item grid__item--2">
-      <p style="color:white; z-index:0; position:relative;"><img style="width: 180px;
-    height: 180px;
-    position: relative;
-    bottom: 45px;"src="2.png"></p>
+     <div class="locked2" id="locked">&#128274;</div>
+     <img id="myImg"
+       src="https://m.media-amazon.com/images/I/7117XJuLHsL._AC_UF894,1000_QL80_.jpg"
+       style="width:180px;height:180px;position:absolute;bottom:5px; left:6px;">
+      <div id="myModal" class="modal" style="display:none;">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" 
+        src="https://m.media-amazon.com/images/I/7117XJuLHsL._AC_UF894,1000_QL80_.jpg">
+     </div>
         <span class="grid__item-door">
             <div class="door-front">2</div>
            <div class="door-back"></div>
@@ -276,6 +282,48 @@ modal.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+   var end = new Date('2026-12-01');
+    var now = new Date();
+    if (end - now <= 0) {
+        var e = document.getElementById('locked');
+        e.parentElement.removeChild(e);
+    }
+
+    var end2 = new Date('2026-12-02');
+    var now2 = new Date();
+    if (end2 - now2 <= 0) {
+        var e = document.getElementById('locked2');
+        e.parentElement.removeChild(e);
+    }
+
+    var end3 = new Date('2026-12-03');
+    var now3 = new Date();
+    if (end3 - now3 <= 0) {
+        var e = document.getElementById('locked3');
+        e.parentElement.removeChild(e);
+    }
+
+    var end4 = new Date('2026-12-04');
+    var now4 = new Date();
+    if (end4 - now4 <= 0) {
+        var e = document.getElementById('locked4');
+        e.parentElement.removeChild(e);
+    }
+
+    var end5 = new Date('2026-12-05');
+    var now5 = new Date();
+    if (end5 - now5 <= 0) {
+        var e = document.getElementById('locked5');
+        e.parentElement.removeChild(e);
+    }
+
+    var end6 = new Date('2026-12-06');
+    var now6 = new Date();
+    if (end6 - now6 <= 0) {
+        var e = document.getElementById('locked6');
+        e.parentElement.removeChild(e);
+    }
+  
     </script>
   </body>
 </html>
